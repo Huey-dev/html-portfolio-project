@@ -1,0 +1,16 @@
+ p {
+        color: red;
+        font-family: monospace;
+        font-style: italic;
+    }
+    body {
+        background-color: white
+    }
+
+    label {
+        color: blue
+    }
+    .emailaddress-input {
+        color: yellow;
+    }
+  
