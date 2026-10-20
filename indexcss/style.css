@@ -1,0 +1,28 @@
+.block-demo {
+    width: 15vw;
+    height: 15vh;
+    background-color: lightblue;
+    padding: 16px;
+    margin-left: 16px;
+}
+
+.block-background {
+     background-color: #000;
+  color: whitesmoke;
+  width: 10vw;
+  height: 10vh;
+  padding: 4rem;
+}
+
+.inline-background {
+    background-color: brown;
+}
+
+.opposite {
+  background-color: #000;
+  color: whitesmoke;
+  display: inline;
+  padding: 4rem;
+  margin-top: 100px;
+  height: 200px;
+}
