@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="indexcss/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="indexcss/style.css">
 </head>
+
 <body>
-    <h1>Hello world</h1>
+  <h1>CSS Display Playground</h1>
+  <p>Observe how changing display affects the layout.</p>
+
+  <section>
+    <h2>1. Block</h2>
+    <div class="demo-box block-demo">Block One</div>
+    <div class="demo-box block-demo">Block Two</div>
+    <div class="demo-box block-demo">Block Three</div>
+    <p>Each block starts on a new line and normally takes
+      the available width.</p>
+  </section>
+
+  <section>
+    <h2>2. Inline</h2>
+    <span class="demo-box inline-demo">Inline One</span>
+    <span class="demo-box inline-demo">Inline Two</span>
+    <span class="demo-box inline-demo">Inline Three</span>
+    <p>Inline elements flow with text. Width and height
+      do not work on them in the usual way.</p>
+  </section>
+
+  <section>
+    <h2>3. Inline-block</h2>
+    <div class="demo-box inline-block-demo">Item One</div>
+    <div class="demo-box inline-block-demo">Item Two</div>
+    <div class="demo-box inline-block-demo">Item Three</div>
+    <p>Items sit beside one another when space allows,
+      while accepting width and height.</p>
+  </section>
+
+  <section>
+    <h2>4. Flex</h2>
+    <div class="flex-container">
+      <div class="demo-box">One</div>
+      <div class="demo-box">Two</div>
+      <div class="demo-box">Three</div>
+    </div>
+    <p>The parent controls the arrangement of its direct children.</p>
+  </section>
+
+  <section>
+    <h2>5. Grid</h2>
+    <div class="grid-container">
+      <div class="demo-box">One</div>
+      <div class="demo-box">Two</div>
+      <div class="demo-box">Three</div>
+      <div class="demo-box">Four</div>
+      <div class="demo-box">Five</div>
+      <div class="demo-box">Six</div>
+    </div>
+    <p>Grid organises items into rows and columns.</p>
+  </section>
+
+  <section>
+    <h2>6. None</h2>
+    <div class="demo-box">Visible item</div>
+    <div class="demo-box hidden-demo">Hidden item</div>
+    <div class="demo-box">Another visible item</div>
+    <p>The hidden item is removed from the layout.</p>
+  </section>
+
+  <section>
+    <h2>7. Contents</h2>
+    <div class="contents-parent">
+      <div class="demo-box">Child One</div>
+      <div class="demo-box">Child Two</div>
+    </div>
+    <p>The parent generates no principal layout box of its own.
+      Its children participate in the surrounding layout.</p>
+  </section>
+
+  <section>
+    <h2>8. List-item</h2>
+    <div class="list-demo">First item</div>
+    <div class="list-demo">Second item</div>
+    <div class="list-demo">Third item</div>
+  </section>
+
+  <section>
+    <h2>9. Table display</h2>
+    <div class="table-demo">
+      <div class="table-row">
+        <div class="table-cell">Name</div>
+        <div class="table-cell">Age</div>
+        <div class="table-cell">Role</div>
+      </div>
+      <div class="table-row">
+        <div class="table-cell">Ada</div>
+        <div class="table-cell">25</div>
+        <div class="table-cell">Developer</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>10. Flexbox: Direction</h2>
+    <div class="flex-container flex-column">
+      <div class="demo-box">One</div>
+      <div class="demo-box">Two</div>
+      <div class="demo-box">Three</div>
+    </div>
+    <p>Try removing flex-column from the parent.</p>
+  </section>
+
+  <section>
+    <h2>11. Flexbox: Wrapping</h2>
+    <div class="flex-container flex-wrap">
+      <div class="demo-box">One</div>
+      <div class="demo-box">Two</div>
+      <div class="demo-box">Three</div>
+      <div class="demo-box">Four</div>
+      <div class="demo-box">Five</div>
+    </div>
+    <p>Resize the browser to see items wrap onto new lines.</p>
+  </section>
 </body>
+
 </html>
