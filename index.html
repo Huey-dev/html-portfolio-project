@@ -1,130 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="indexcss/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt | Home</title>
+    <link rel="stylesheet" href="indexcss/style.css">
 </head>
-
 <body>
-  <h1>CSS Display Playground</h1>
-  <h3>Observe how changing display affects the layout.</h3>
 
-  <section>
-    <!-- <h2>1. Block</h2>
-    <div class="demo-box block-demo">Block One</div> -->
-     <p>This is a block paragraph.</p>
-    <p>This is <div class="block-background">block</div> paragraph.</p>
-    <br>
-    <br>
-    <br>
-    <!-- <div class="demo-box block-demo">Block Two</div>
-    <div class="demo-box block-demo">Block Three</div> -->
-    <!-- <p class="block-background">Each block starts on a new line and normally takes
-      the available width.</p> -->
-  </section>
+    <header class="navbar">
+        <a href="index.html" class="logo">MATT<span>.</span></a>
 
-  <section>
-    <p>This is an Inline paragraph.</p>
-    <p>This is <span class="opposite">another</span> paragraph.</p>
-  </section>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section>
-    <h2>3. Inline-block</h2>
-    <div class="demo-box inline-block-demo">Item One</div>
-    <div class="demo-box inline-block-demo">Item Two</div>
-    <div class="demo-box inline-block-demo">Item Three</div>
-    <p>Items sit beside one another when space allows,
-      while accepting width and height.</p>
-  </section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">FRONTEND DEVELOPER</p>
+                <h1>I build things for the <span>web.</span></h1>
+                <p>
+                    I create clean, functional and responsive websites
+                    using HTML and CSS.
+                </p>
+                <a href="about.html" class="button">Discover More</a>
+            </div>
 
-  <section>
-    <h2>4. Flex</h2>
-    <div class="flex-container">
-      <div class="demo-box">One</div>
-      <div class="demo-box">Two</div>
-      <div class="demo-box">Three</div>
-    </div>
-    <p>The parent controls the arrangement of its direct children.</p>
-  </section>
+            <div class="hero-card">
+                <span class="floating-badge">Available for projects</span>
+                <div class="code-window">
+                    <p>&lt;h1&gt;</p>
+                    <h2>Hello, World!</h2>
+                    <p>&lt;/h1&gt;</p>
+                    <br>
+                    <p>const developer = "Matt";</p>
+                </div>
+            </div>
+        </section>
 
-  <section>
-    <h2>5. Grid</h2>
-    <div class="grid-container">
-      <div class="demo-box">One</div>
-      <div class="demo-box">Two</div>
-      <div class="demo-box">Three</div>
-      <div class="demo-box">Four</div>
-      <div class="demo-box">Five</div>
-      <div class="demo-box">Six</div>
-    </div>
-    <p>Grid organises items into rows and columns.</p>
-  </section>
+        <section class="skills">
+            <h2>Technologies I Use</h2>
+            <div class="skill-list">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Flexbox</span>
+                <span>CSS Grid</span>
+            </div>
+        </section>
 
-  <section>
-    <h2>6. None</h2>
-    <div class="demo-box">Visible item</div>
-    <div class="demo-box hidden-demo">Hidden item</div>
-    <div class="demo-box">Another visible item</div>
-    <p>The hidden item is removed from the layout.</p>
-  </section>
+        <section class="projects">
+            <h2>Featured Projects</h2>
 
-  <section>
-    <h2>7. Contents</h2>
-    <div class="contents-parent">
-      <div class="demo-box">Child One</div>
-      <div class="demo-box">Child Two</div>
-    </div>
-    <p>The parent generates no principal layout box of its own.
-      Its children participate in the surrounding layout.</p>
-  </section>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-image image-one">01</div>
+                    <h3>Portfolio Website</h3>
+                    <p>A personal website built with HTML and CSS.</p>
+                </article>
 
-  <section>
-    <h2>8. List-item</h2>
-    <div class="list-demo">First item</div>
-    <div class="list-demo">Second item</div>
-    <div class="list-demo">Third item</div>
-  </section>
+                <article class="project-card">
+                    <div class="project-image image-two">02</div>
+                    <h3>Photo Explorer</h3>
+                    <p>A gallery layout demonstrating CSS Grid.</p>
+                </article>
 
-  <section>
-    <h2>9. Table display</h2>
-    <div class="table-demo">
-      <div class="table-row">
-        <div class="table-cell">Name</div>
-        <div class="table-cell">Age</div>
-        <div class="table-cell">Role</div>
-      </div>
-      <div class="table-row">
-        <div class="table-cell">Ada</div>
-        <div class="table-cell">25</div>
-        <div class="table-cell">Developer</div>
-      </div>
-    </div>
-  </section>
+                <article class="project-card">
+                    <div class="project-image image-three">03</div>
+                    <h3>Task Manager</h3>
+                    <p>A dashboard concept for managing daily tasks.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-  <section>
-    <h2>10. Flexbox: Direction</h2>
-    <div class="flex-container flex-column">
-      <div class="demo-box">One</div>
-      <div class="demo-box">Two</div>
-      <div class="demo-box">Three</div>
-    </div>
-    <p>Try removing flex-column from the parent.</p>
-  </section>
+    <footer>
+        <p>© 2026 Matt. Built with HTML and CSS.</p>
+    </footer>
 
-  <section>
-    <h2>11. Flexbox: Wrapping</h2>
-    <div class="flex-container flex-wrap">
-      <div class="demo-box">One</div>
-      <div class="demo-box">Two</div>
-      <div class="demo-box">Three</div>
-      <div class="demo-box">Four</div>
-      <div class="demo-box">Five</div>
-    </div>
-    <p>Resize the browser to see items wrap onto new lines.</p>
-  </section>
 </body>
-
 </html>
