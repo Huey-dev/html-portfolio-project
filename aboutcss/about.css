@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+   
+}
+
+.title {
+    color: black;
+}
+
+.first-item {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+li {
+    list-style-type: none;
+    background-color: green;
+
+}
+
+a  {
+        color: white;
+}
